@@ -4,6 +4,7 @@
     ./bluetooth.nix
     ./boot.nix
     ./cleanup.nix
+    ./firewall.nix
     ./gaming.nix
     ./kernel.nix
     ./net.nix
