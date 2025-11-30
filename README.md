@@ -12,7 +12,7 @@ My very simple NixOS configuration, which I use for leisure, gaming, and work. T
 Run this command to ensure Git & Vim are installed:
 
 ```
-nix-shell -p git neovim #It is preferable to use a file editor that is convenient for you.
+nix-shell -p git
 ```
 
 
