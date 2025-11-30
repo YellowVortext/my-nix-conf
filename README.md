@@ -34,6 +34,8 @@ nixos-generate-config --show-hardware-config > <your-hosts>/<your-desired-hostna
 ```
 
 
+Go to configuration.nix and replace “nixos” with your hostname.
+
 Go to user.nix and replace “user” with your name.
 
 Go to timezone.nix and replace “Asia/Tashkent” in your time.
