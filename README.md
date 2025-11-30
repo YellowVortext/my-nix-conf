@@ -1,5 +1,5 @@
 # Vortex NixOS Configuration
-My NixOS configuration, which I use for leisure, gaming, and work. Very simple configuration. Uses: Home-manager, Flake, unstable channel, nvidia+amd, kde plasma
+My very simple NixOS configuration, which I use for leisure, gaming, and work. Uses: Home-manager, Flake, unstable channel, amd+nvidia, kde plasma
 
 # Requirements
 
