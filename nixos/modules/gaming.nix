@@ -1,7 +1,6 @@
 { pkgs, ... }:
 
 {
-
   programs = {
     steam = {
         enable = true;
@@ -13,6 +12,9 @@
     mangohud
     protonplus
     heroic
+    lutris
+    bottles
     antimicrox
+    steam-run
   ];
 }
