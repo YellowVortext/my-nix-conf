@@ -9,8 +9,6 @@
 
   services.xserver.videoDrivers = ["nvidia"];
 
-  hardware.nvidia-container-toolkit.enable = true;
-
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = false;
@@ -19,10 +17,7 @@
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.production;
     prime = {
-      offload = {
-        enable = true;
-        enableOffloadCmd = true;
-      };
+      sync.enable = true;
       amdgpuBusId = "PCI:6:0:0";
       nvidiaBusId = "PCI:1:0:0";
     };
