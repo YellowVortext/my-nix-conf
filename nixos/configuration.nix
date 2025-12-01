@@ -7,7 +7,7 @@
     ./modules/default.nix
   ];
 
-  networking.hostName = "eva";
+  networking.hostName = "nixos";
 
   services.printing.enable = true;
 
