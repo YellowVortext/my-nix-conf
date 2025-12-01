@@ -7,7 +7,7 @@
     ./modules/default.nix
   ];
 
-  networking.hostName = "nixos";
+  networking.hostName = "eva";
 
   services.printing.enable = true;
 
@@ -24,5 +24,6 @@
 
   i18n.defaultLocale = "ru_RU.UTF-8";
 
-  system.stateVersion = "25.05";
+  system.stateVersion = "25.11";
 }
+
