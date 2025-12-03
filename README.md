@@ -1,8 +1,8 @@
 # Vortex NixOS Configuration
+https://raw.githubusercontent.com/YellowVortext/my-nix-conf/main/demonstration/skreen.png
 My very simple NixOS configuration, which I use for leisure, gaming, and work. To be honest, I originally created this repository just for myself, but it's a real pain to log into my Git account via the terminal every single time, so I just decided to make it public. Uses: Home-manager, Flake, unstable channel, amd+nvidia, kde plasma
 
 # Requirements
-![Demo](https://raw.githubusercontent.com/YellowVortext/my-nix-conf/main/demonstration/skreen.png)
 - You must be running NixOS.
 - This repository must be located in your folder
 - Installation must be done using GPT and UEFI. If your computer does not support this type of installation, you will have to change moduels/boot.nix yourself
