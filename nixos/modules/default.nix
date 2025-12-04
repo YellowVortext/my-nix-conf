@@ -1,19 +1,12 @@
 {
   imports = [
-    ./audio.nix
-    ./bluetooth.nix
-    ./boot.nix
-    ./cleanup.nix
     ./firewall.nix
     ./gaming.nix
-    ./kernel.nix
-    ./net.nix
     ./nvidia.nix
     ./obs.nix
     ./plasma.nix
-    ./timezone.nix
-    ./user.nix
-    ./zram.nix
+    ./services.nix
     ./vm.nix
+    ./zram.nix
   ];
 }
