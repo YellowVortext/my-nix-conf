@@ -1,29 +1,39 @@
-{ pkgs, stateVersion, hostname, ... }:
+{ config, pkgs, ... }:
 
 {
-  imports = [
-    ./hardware-configuration.nix
-    ./packages.nix
-    ./modules/default.nix
-  ];
+  imports =
+    [
+      ./hardware-configuration.nix
+      ./packages.nix
+      ./modules/default.nix
+    ];
 
-  networking.hostName = "nixos";
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
-  services.printing.enable = true;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
+  networking.hostName = "eva";
 
-  nixpkgs.config.allowUnfree = true;
+  networking.networkmanager.enable = true;
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  services.flatpak.enable = true;
+  time.timeZone = "Asia/Tashkent";
 
   i18n.defaultLocale = "ru_RU.UTF-8";
 
-  system.stateVersion = "25.11";
-}
+  users.users.vlad = {
+    isNormalUser = true;
+    description = "vlad";
+    extraGroups = [ "networkmanager" "wheel" ];
+    packages = with pkgs; [
+      kdePackages.kate
+    ];
+  };
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  nixpkgs.config.allowUnfree = true;
+
+  system.stateVersion = "25.11";
+
+}
