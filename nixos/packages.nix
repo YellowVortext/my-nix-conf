@@ -30,8 +30,6 @@
       wget
       mpv
       curl
-      yazi
-      kitty
       lazygit
       btop
       git
