@@ -13,7 +13,7 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "eva";
+  networking.hostName = "nixos";
 
   networking.networkmanager.enable = true;
 
@@ -21,9 +21,9 @@
 
   i18n.defaultLocale = "ru_RU.UTF-8";
 
-  users.users.vlad = {
+  users.users.user = {
     isNormalUser = true;
-    description = "vlad";
+    description = "user";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
