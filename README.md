@@ -1,6 +1,6 @@
 # Vortex NixOS Configuration
 ![Demo](https://raw.githubusercontent.com/YellowVortext/my-nix-conf/main/demonstration/skreen.png)
-My very simple NixOS configuration, which I use for leisure, gaming, and work. To be honest, I originally created this repository just for myself, but it's a real pain to log into my Git account via the terminal every single time, so I just decided to make it public. Uses: Home-manager, Flake, unstable channel, amd+nvidia, kde plasma
+My very simple NixOS configuration, which I use for leisure, gaming, and work. To be honest, I originally created this repository just for myself, but it's a real pain to log into my Git account via the terminal every single time, so I just decided to make it public. Uses: Home-manager, Flake, unstable channel, amd+nvidia, kde plasma. (In Beta, I want to configure Hyprland.)
 
 # Requirements
 - You must be running NixOS.
