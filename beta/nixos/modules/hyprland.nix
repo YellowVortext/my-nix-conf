@@ -10,7 +10,7 @@
   };
   environment.systemPackages = with pkgs; [
     kitty
-    swww
+    swaybg
     waybar
     dunst
     wofi
