@@ -34,11 +34,7 @@ nixos-generate-config --show-hardware-config > <your-hosts>/<your-desired-hostna
 ```
 
 
-Go to configuration.nix and replace “nixos” with your hostname.
-
-Go to modules/user.nix and replace “user” with your name.
-
-Go to modules/timezone.nix and replace “Asia/Tashkent” in your time.
+Go to configuration.nix and replace “nixos” with your hostname, and “user” with your name, and replace “Asia/Tashkent” in your time.
 
 In the modules/nvidia.nix file, replace the nvidia modules with amd or intel modules according to your hardware specifications.
 
