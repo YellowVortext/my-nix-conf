@@ -22,7 +22,7 @@ cd my-nix-conf
 ```
 
 ```
-cp -r nixos <your-host>/<your-hostname>
+cp -r nixos home/<your-hostname>
 ```
 
 # Edits
@@ -30,9 +30,8 @@ cp -r nixos <your-host>/<your-hostname>
 Generate your hardware.nix in derictory:
 
 ```
-nixos-generate-config --show-hardware-config > <your-hosts>/<your-desired-hostname>/hardware-configuration.nix
+nixos-generate-config --show-hardware-config > <your-hosts>/nixos/hardware-configuration.nix
 ```
-
 
 Go to configuration.nix and replace “nixos” with your hostname, and “user” with your name, and replace “Asia/Tashkent” in your time.
 
