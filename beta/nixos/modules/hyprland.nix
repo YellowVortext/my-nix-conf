@@ -14,6 +14,7 @@
     waybar
     dunst
     wofi
+    pavucontrol
     nwg-dock-hyprland
   ];
 }
