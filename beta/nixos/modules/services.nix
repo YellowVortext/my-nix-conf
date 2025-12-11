@@ -17,6 +17,12 @@
       layout = "us";
       variant = "";
     };
+    displayManager = {
+      sddm = {
+        enable = true;
+        wayland.enable = true;
+        theme = "breeze";
+      };
   };
 
   programs.direnv.enable = true;
