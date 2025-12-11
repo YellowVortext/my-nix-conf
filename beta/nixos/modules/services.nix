@@ -1,5 +1,7 @@
 { pkgs, config, ... }: {
   services = {
+    gvfs.enable = true;
+    udisks2.enable = true;
     printing.enable = false;
     xserver.videoDrivers = ["nvidia"];
     power-profiles-daemon.enable = true;
