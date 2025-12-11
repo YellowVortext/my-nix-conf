@@ -23,7 +23,7 @@
         wayland.enable = true;
         theme = "breeze";
       };
-  };
+    };
 
   programs.direnv.enable = true;
   security.rtkit.enable = true;
