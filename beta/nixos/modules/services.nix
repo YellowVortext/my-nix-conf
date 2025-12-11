@@ -24,6 +24,7 @@
         theme = "breeze";
       };
     };
+  };
 
   programs.direnv.enable = true;
   security.rtkit.enable = true;
@@ -39,5 +40,4 @@
       options = "--delete-older-than 30d";
     };
   };
- };
 }
