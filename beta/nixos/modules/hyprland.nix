@@ -16,5 +16,6 @@
     wofi
     pavucontrol
     nwg-dock-hyprland
+    nemo
   ];
 }
