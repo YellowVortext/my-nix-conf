@@ -21,18 +21,20 @@
 
   i18n.defaultLocale = "ru_RU.UTF-8";
 
-  users.users.user = {
+  users.users.vlad = {
     isNormalUser = true;
-    description = "user";
+    description = "vlad";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      kdePackages.kate
+      vscode
     ];
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   nixpkgs.config.allowUnfree = true;
+
+  services.flatpak.enable = true;
 
   system.stateVersion = "25.11";
 
