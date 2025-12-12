@@ -34,6 +34,9 @@
       btop
       git
       jdk
+      tree
+      cava
+      yt-dlp
     ];
 
   fonts.packages = with pkgs; [
