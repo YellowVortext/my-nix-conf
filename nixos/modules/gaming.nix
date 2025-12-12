@@ -11,9 +11,6 @@
   environment.systemPackages = with pkgs; [
     mangohud
     protonplus
-    heroic
-    lutris
-    bottles
     antimicrox
     steam-run
   ];
