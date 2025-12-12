@@ -3,7 +3,6 @@
     printing.enable = false;
     xserver.videoDrivers = ["nvidia"];
     envfs.enable = true
-    gvfs.enable = true;
     udisks2.enable = true;
     power-profiles-daemon.enable = true;
     pulseaudio.enable = false;
