@@ -1,35 +1,41 @@
 { config, lib, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
+      #for amd
+      microcode-amd
+      mesa
+      vulkan-tools
+      amdvlk
+
+      #programs
       aseprite
       firefox
       foliate
       spotify
       obsidian
       darktable
-      mission-center
       video-downloader
       libreoffice
       qbittorrent
       telegram-desktop
       bitwarden-desktop
-      fastfetch
       gearlever
-      aseprite
       easyeffects
+      krita
       discord
       inkscape
       localsend
       audacity
       reaper
-      blender
-      home-manager
-      kdePackages.kdenlive
-      protonmail-desktop
-      ranger
-      krita
-      wget
       mpv
+      blender
+      kdePackages.kdenlive
+
+      #others
+      home-manager
+      fastfetch
+      ranger
+      wget
       lazygit
       btop
       git
