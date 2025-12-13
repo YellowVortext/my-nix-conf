@@ -5,7 +5,6 @@
       microcode-amd
       mesa
       vulkan-tools
-      amdvlk
 
       #programs
       aseprite
