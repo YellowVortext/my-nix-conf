@@ -23,10 +23,10 @@
       audacity
       reaper
       blender
+      home-manager
       kdePackages.kdenlive
       protonmail-desktop
       ranger
-      neovim
       krita
       wget
       mpv
